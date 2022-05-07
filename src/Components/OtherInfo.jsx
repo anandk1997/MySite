@@ -13,6 +13,7 @@ const OtherInfo = ({ formData, handleChange, next, previous }) => {
     // ON SUBMIT CLICK EVENT...................................................................................................
     const handleSubmit = (e) => {
         // e.preventDefault()
+        console.log("formData==>", formData);
         setFormErrors(validate(formData))
         setIsSubmit(true)
     }
